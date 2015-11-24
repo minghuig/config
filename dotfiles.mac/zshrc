@@ -26,7 +26,6 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/scripts:/usr/loc
 export PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
 export PATH="$PATH:/usr/texbin"
 # export MANPATH="/usr/local/man:$MANPATH"
-# export CDPATH=".:/Users/zfleischman/repos/farm2"
 
 # Source Scripts
 source ~/repos/scripts/util/findfile
@@ -45,6 +44,7 @@ alias fire='open -a /Applications/Firefox.app'
 alias ch='open -a /Applications/Google\ Chrome.app'
 alias ij='open -a /Applications/IntelliJ\ IDEA\ 12.app'
 alias vlc='open -a /Applications/VLC.app'
+alias lit='ch https://www.literotica.com/stories/'
 
 # Command Shortcuts
 alias sz='source ~/.zshrc'
@@ -106,24 +106,14 @@ alias resume='pdflatex ~/repos/resume/src/resume.tex;mv ~/repos/resume/src/resum
 # All Repos
 alias a='cd ~/repos'
 
-# Wonderdome
-alias w='cd ~/repos/wonderdome'
-alias wm='cd ~/repos/wonderdome/src/playasophy/wonderdome/mode'
-
-# Farm2
-alias f='cd ~/repos/farm2;pwd'
+# work
+alias f='cd ~/Work/nom-ios-swift'
 
 # Scripts
 alias q='cd ~/repos/scripts'
 
 # Config
 alias ac='cd ~/repos/config'
-
-################
-# Counsyl Specific
-################
-alias z='cd ~/repos/vagrant/boxes/testv-dev;(vagrant ssh -- -t "/bin/bash ~/repos/scripts/util/start_tmux.counsyl")||(vagrant up && vagrant ssh -- -t "/bin/bash ~/repos/scripts/util/start_tmux.counsyl")'
-alias form='java -jar /Users/zfleischman/repos/formality/build/libs/formality-1.4.0.jar'
 
 
 #################
